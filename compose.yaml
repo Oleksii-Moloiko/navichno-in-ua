@@ -1,0 +1,9 @@
+services:
+  navichno:
+    image: nginx:stable-alpine
+    container_name: navichno-test
+    ports:
+      - "8088:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    restart: unless-stopped
