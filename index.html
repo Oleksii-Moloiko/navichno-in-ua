@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>navichno — сайти пам’яті та QR-коди на пам’ятники</title>
+<meta name="description" content="Сайти пам’яті для загиблих Героїв і Героїнь та близьких людей. QR-код на пам’ятнику відкриває історію життя, фото й спогади.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap top__in">
+    <a class="logo" href="#hero" aria-label="navichno — на початок">
+      <svg viewBox="0 0 24 32" fill="none" aria-hidden="true"><path d="M4 31V12.5a8 8 0 0 1 16 0V31" stroke="currentColor" stroke-width="1.3"/><path d="M12 10.2c1.7 1.9 2.9 3.7 2.9 5.6a2.9 2.9 0 0 1-5.8 0c0-1.9 1.2-3.7 2.9-5.6Z" fill="var(--accent)"/><rect x="11.15" y="19.6" width="1.7" height="11.4" fill="currentColor"/><path d="M8.2 31h7.6" stroke="currentColor" stroke-width="1.3"/></svg>
+      navichno<span class="logo__ua">in UA</span>
+    </a>
+    <nav class="menu" aria-label="Розділи">
+      <a href="#how">Як це працює</a>
+      <a href="#plans">Формати</a>
+      <a href="#tone">Оформлення</a>
+      <a href="#faq">Питання</a>
+    </nav>
+    <button class="btn theme-toggle" type="button" data-theme-toggle aria-label="Перемкнути світлу чи темну тему">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+    </button>
+    <a class="btn btn--accent" href="#contact">Замовити сайт</a>
+    <button class="btn icon-btn burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mnav" data-burger><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" data-mnav aria-hidden="true">
+  <div class="mnav__shade" data-mnav-close></div>
+  <button class="btn icon-btn mnav__close" type="button" aria-label="Закрити меню" data-mnav-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="mnav__arch" role="dialog" aria-modal="true" aria-label="Меню сайту">
+    <svg class="mnav__flame" viewBox="0 0 24 32" fill="none" aria-hidden="true"><path d="M4 31V12.5a8 8 0 0 1 16 0V31" stroke="currentColor" stroke-width="1.3"/><path d="M12 10.2c1.7 1.9 2.9 3.7 2.9 5.6a2.9 2.9 0 0 1-5.8 0c0-1.9 1.2-3.7 2.9-5.6Z" fill="var(--accent)"/><rect x="11.15" y="19.6" width="1.7" height="11.4" fill="currentColor"/><path d="M8.2 31h7.6" stroke="currentColor" stroke-width="1.3"/></svg>
+    <ul class="mnav__links mnav__links--num">
+      <li><a href="#how">Як це працює</a></li>
+      <li><a href="#plans">Формати</a></li>
+      <li><a href="#tone">Оформлення</a></li>
+      <li><a href="#inside">Що всередині</a></li>
+      <li><a href="#faq">Питання</a></li>
+    </ul>
+    <div class="mnav__foot">
+      <div class="mnav__contact">
+        <p class="mnav__label">На зв’язку 24/7</p>
+        <div class="mnav__quick">
+          <a class="mnav__q" href="tel:+380739828338" aria-label="Зателефонувати"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><span>Дзвінок</span></a>
+          <a class="mnav__q" href="#" target="_blank" rel="noopener" aria-label="Telegram-бот"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M21 4 3 11l6 2.2L18 7l-6.6 7.4L11 20l3.2-3.6L18 19z"/></svg><span>Бот</span></a>
+          <a class="mnav__q" href="https://www.instagram.com/navichno.in.ua/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg><span>Instagram</span></a>
+        </div>
+      </div>
+      <a class="btn btn--accent" href="#contact" data-mnav-link>Замовити сайт</a>
+      <p>Вічна пам’ять і слава Героям</p>
+    </div>
+  </div>
+</div>
+
+<main>
+<section class="hero" id="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <svg class="hero__arches" viewBox="0 0 800 800" fill="none"><path d="M100 800V400a300 300 0 0 1 600 0v400"/><path d="M170 800V400a230 230 0 0 1 460 0v400"/><path d="M240 800V400a160 160 0 0 1 320 0v400"/></svg>
+    <i class="hero__glow"></i>
+    <i class="hero__dots"></i>
+  </div>
+  <div class="wrap hero__stage">
+    <div class="hero__text">
+      <h1>Пам’ять, що<br>залишається навічно</h1>
+      <p class="lead">Сайти пам’яті та QR-коди на пам’ятники. Історія життя, фото й спогади відкриваються одним наведенням камери, у будь-якому місці й через багато років.</p>
+      <div class="hero__cta">
+        <a class="btn btn--accent" href="https://www.instagram.com/navichno.in.ua/" target="_blank" rel="noopener">Написати в Instagram</a>
+        <a class="btn" href="#plans">Обрати варіант</a>
+      </div>
+    </div>
+
+    <div class="flow" aria-label="Як це працює: QR-код на пам’ятнику сканують телефоном, і відкривається сторінка пам’яті" role="img">
+      <svg class="flow__path" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M16 72 C 26 66, 34 70, 48 60 S 64 40, 74 30" />
+      </svg>
+
+      <div class="f-stone">
+        <div class="f-stone__name">Мельник<br>Сергій Іванович</div>
+        <div class="f-stone__dates">1970 — 2025</div>
+        <img class="f-stone__qr" src="assets/images/qr.webp" alt="">
+        <div class="f-stone__base"></div>
+      </div>
+      <span class="f-tag f-tag--1"><b>1</b>QR на пам’ятнику</span>
+
+      <div class="f-phone">
+        <div class="f-phone__screen">
+          <div class="f-phone__cam">
+            <img src="assets/images/qr.webp" alt="">
+            <i class="c c1"></i><i class="c c2"></i><i class="c c3"></i><i class="c c4"></i>
+            <i class="scan"></i>
+          </div>
+          <p class="f-phone__hint">Наведіть камеру</p>
+        </div>
+      </div>
+      <span class="f-tag f-tag--2"><b>2</b>Скан телефоном</span>
+
+      <div class="f-page">
+        <div class="f-page__bar"><i></i><i></i><i></i><span>navichno.in.ua/melnyk</span></div>
+        <div class="f-page__body">
+          <p class="f-page__eyebrow">СТОРІНКА ПАМ’ЯТІ</p>
+          <p class="f-page__name">Мельник<br>Сергій Іванович</p>
+          <p class="f-page__meta">Полковник · 12.03.1970 — 09.05.2025</p>
+          <p class="f-page__quote">«Справжня смерть — це коли про людину забувають»</p>
+          <div class="f-page__tl"><span>1988</span><span>1995</span><span>2002</span><span>2025</span></div>
+          <div class="f-page__candle"><svg viewBox="0 0 10 16" aria-hidden="true"><path d="M5 0c2 2.4 3 4.3 3 6a3 3 0 0 1-6 0c0-1.7 1-3.6 3-6Z" fill="var(--accent)"/><rect x="4.2" y="9" width="1.6" height="7" fill="currentColor"/></svg>Запалити свічку · 1 248</div>
+        </div>
+      </div>
+      <span class="f-tag f-tag--3"><b>3</b>Сторінка пам’яті</span>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="kicker">Як це працює</p><h2>Від розмови з родиною до QR-коду на камені</h2></div>
+      <p class="lead">Ми беремо на себе всю технічну частину. Від родини потрібні лише спогади, фото й дати: решту зробимо ми.</p>
+    </div>
+    <ol class="steps">
+      <li><b>1</b><h3>Розмова</h3><p>Ви пишете або телефонуєте нам. Обираєте варіант, а ми надсилаємо просту анкету: дати, біографія, нагороди, фото.</p></li>
+      <li><b>2</b><h3>Сторінка пам’яті</h3><p>Збираємо сайт, узгоджуємо з вами кожне слово й оформлення. Нічого не публікуємо без вашого підтвердження.</p></li>
+      <li><b>3</b><h3>QR-код</h3><p>Отримуєте QR-код для пам’ятника чи таблички та посилання, яким можна поділитися з рідними й побратимами.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="plans">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="kicker">Формати</p><h2>Чотири способи зберегти історію</h2></div>
+      <p class="lead">Від однієї гідної сторінки до повного цифрового меморіалу, який родина наповнює сама. У кожному варіанті — світла чи темна тема та колір, що пасує саме цій людині.</p>
+    </div>
+    <div class="plans">
+      <article class="plan">
+        <h3>Пам’ять</h3>
+        <p class="plan__for">Одна гідна сторінка: коротко, світло і назавжди.</p>
+        <p class="plan__price">Вартість за запитом<small>разовий платіж</small></p>
+        <ul>
+          <li>Сторінка з біографією й датами</li>
+          <li>До 7 фото</li>
+          <li>До 4 нагород</li>
+          <li>Цитата або епітафія</li>
+          <li>Світла чи темна тема, свій колір</li>
+          <li>QR-код і посилання для рідних</li>
+        </ul>
+        <a class="btn" href="#contact" data-plan="Пам’ять">Обрати</a>
+      </article>
+      <article class="plan">
+        <h3>Історія</h3>
+        <p class="plan__for">Повна історія життя з датами, словами й місцем, куди можна прийти.</p>
+        <p class="plan__price">Вартість за запитом<small>разовий платіж</small></p>
+        <ul>
+          <li>Усе з варіанта «Пам’ять»</li>
+          <li>До 30 фото з переглядом на весь екран</li>
+          <li>До 10 нагород з датами указів</li>
+          <li>Таймлайн життя</li>
+          <li>«Слова, які пам’ятають» — улюблені фрази людини</li>
+          <li>Свічка пам’яті з лічильником</li>
+          <li>Місце поховання з маршрутом</li>
+          <li>Спогади близьких через нас</li>
+          <li>До 2 відео</li>
+        </ul>
+        <a class="btn" href="#contact" data-plan="Історія">Обрати</a>
+      </article>
+      <article class="plan plan--feat">
+        <span class="plan__badge">Найповніший</span>
+        <h3>Спадщина</h3>
+        <p class="plan__for">Цифровий меморіал, який родина веде й доповнює сама.</p>
+        <p class="plan__price">Вартість за запитом<small>разовий платіж</small></p>
+        <ul>
+          <li>Усе з варіанта «Історія»</li>
+          <li>Власна адмінка: редагуйте будь-який текст, навіть кнопку</li>
+          <li>Фото й відео без обмежень</li>
+          <li>Окремі розділи: Життя, Подвиг і служба, Фото, Відео, Спогади</li>
+          <li>Спогади від відвідувачів з модерацією родини</li>
+          <li>Згадки в медіа й офіційні джерела</li>
+          <li>Українська та англійська версії</li>
+        </ul>
+        <a class="btn btn--accent" href="#contact" data-plan="Спадщина">Обрати</a>
+      </article>
+      <article class="plan">
+        <h3>Під ключ</h3>
+        <p class="plan__for">Усе, що підкаже серце. Ми втілимо будь-яке побажання родини.</p>
+        <p class="plan__price">Індивідуально<small>після розмови з родиною</small></p>
+        <ul>
+          <li>Усе з варіанта «Спадщина»</li>
+          <li>Унікальний дизайн з нуля</li>
+          <li>Власний домен на ім’я Героя</li>
+          <li class="plus">Біографію напише наш автор після інтерв’ю з рідними</li>
+          <li class="plus">Реставрація старих фото</li>
+          <li class="plus">Пам’ятний відеоролик</li>
+          <li class="plus">Металева пластина з гравіюванням QR</li>
+        </ul>
+        <a class="btn" href="#contact" data-plan="Під ключ">Обговорити</a>
+      </article>
+    </div>
+    <div class="plans-dots" aria-hidden="true" data-plans-dots></div>
+
+    <details class="compare">
+      <summary>Порівняти детально</summary>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col"></th><th scope="col">Пам’ять</th><th scope="col">Історія</th><th scope="col">Спадщина</th><th scope="col">Під ключ</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Фото</th><td>до 7</td><td>до 30</td><td>без обмежень</td><td>без обмежень</td></tr>
+            <tr><th scope="row">Нагороди</th><td>до 4</td><td>до 10</td><td>без обмежень</td><td>без обмежень</td></tr>
+            <tr><th scope="row">Відео</th><td class="n">—</td><td>до 2</td><td>без обмежень</td><td>без обмежень</td></tr>
+            <tr><th scope="row">Світла / темна тема, свій колір</th><td class="y">так</td><td class="y">так</td><td class="y">так</td><td class="y">так</td></tr>
+            <tr><th scope="row">QR-код і посилання</th><td class="y">так</td><td class="y">так</td><td class="y">так</td><td class="y">так</td></tr>
+            <tr><th scope="row">Таймлайн життя</th><td class="n">—</td><td class="y">так</td><td class="y">так</td><td class="y">так</td></tr>
+            <tr><th scope="row">«Слова, які пам’ятають»</th><td class="n">—</td><td class="y">так</td><td class="y">так</td><td class="y">так</td></tr>
+            <tr><th scope="row">Свічка пам’яті з лічильником</th><td class="n">—</td><td class="y">так</td><td class="y">так</td><td class="y">так</td></tr>
+            <tr><th scope="row">Місце поховання з маршрутом</th><td class="n">—</td><td class="y">так</td><td class="y">так</td><td class="y">так</td></tr>
+            <tr><th scope="row">Спогади близьких</th><td class="n">—</td><td>через нас</td><td>форма на сайті + модерація</td><td>форма на сайті + модерація</td></tr>
+            <tr><th scope="row">Редагування</th><td>через нас</td><td>через нас</td><td>власна адмінка</td><td>власна адмінка</td></tr>
+            <tr><th scope="row">Окремі сторінки розділів</th><td class="n">—</td><td class="n">—</td><td class="y">так</td><td class="y">так</td></tr>
+            <tr><th scope="row">Медіа та джерела</th><td class="n">—</td><td class="n">—</td><td class="y">так</td><td class="y">так</td></tr>
+            <tr><th scope="row">Українська та англійська</th><td class="n">—</td><td class="n">—</td><td class="y">так</td><td class="y">так</td></tr>
+            <tr><th scope="row">Унікальний дизайн, власний домен</th><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">так</td></tr>
+            <tr><th scope="row">Біограф, реставрація фото, відеоролик, пластина</th><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">за бажанням</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="tone">
+  <div class="wrap tone">
+    <div>
+      <p class="kicker">Оформлення</p>
+      <h2>Тон, у якому про людину хочеться говорити</h2>
+      <p class="lead lead--tone">Хтось пам’ятає людину тихою й світлою, хтось — суворою й сильною. Оберіть світлу чи темну тему, а колір ми підберемо під характер: від глибокої оливи до теплого піску. Спробуйте самі.</p>
+      <div class="tone__ctrl">
+        <div class="seg" role="group" aria-label="Тема сторінки пам’яті">
+          <button type="button" aria-pressed="true" data-mode="dark">Темна</button>
+          <button type="button" aria-pressed="false" data-mode="light">Світла</button>
+        </div>
+        <div class="swatches" role="group" aria-label="Колір">
+          <button class="swatch swatch--olive" type="button" aria-pressed="true" data-tone="olive" aria-label="Олива"></button>
+          <button class="swatch swatch--graphite" type="button" aria-pressed="false" data-tone="graphite" aria-label="Графіт"></button>
+          <button class="swatch swatch--sky" type="button" aria-pressed="false" data-tone="sky" aria-label="Небо"></button>
+          <button class="swatch swatch--sand" type="button" aria-pressed="false" data-tone="sand" aria-label="Пісок"></button>
+          <button class="swatch swatch--wine" type="button" aria-pressed="false" data-tone="wine" aria-label="Калина"></button>
+        </div>
+        <p class="tone__name" data-tone-name>Олива · стримано й гідно</p>
+      </div>
+    </div>
+    <div class="preview" data-preview aria-live="polite">
+      <small>СТОРІНКА ПАМ’ЯТІ</small>
+      <h4>Мельник<br>Сергій Іванович</h4>
+      <p>Полковник · 12.03.1970 — 09.05.2025</p>
+      <blockquote>«Справжня смерть — це коли про людину забувають»</blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="inside">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="kicker">Що всередині</p><h2>Не анкета, а людина</h2></div>
+      <p class="lead">Ми розповідаємо не лише дати й посади, а якою була людина: що любила, як жартувала, кому першою приходила на допомогу.</p>
+    </div>
+    <div class="features">
+      <div><h3>Історія життя</h3><p>Біографія та важливі дати на таймлайні, підтверджені родиною.</p></div>
+      <div><h3>Подвиг і нагороди</h3><p>Звання, підрозділ, ордени з датами указів і джерелами.</p></div>
+      <div><h3>Моменти життя</h3><p>Фото й відео, які відкриваються на весь екран і швидко завантажуються навіть на кладовищі зі слабким зв’язком.</p></div>
+      <div><h3>Спогади</h3><p>Слова рідних, побратимів і друзів. Публікуються лише після перевірки.</p></div>
+      <div><h3>Свічка пам’яті</h3><p>Кожен може запалити свічку, і родина бачить, скільки людей пам’ятає.</p></div>
+      <div><h3>Місце поховання</h3><p>Адреса, ділянка й кнопка маршруту для тих, хто хоче прийти.</p></div>
+    </div>
+    <button class="more" type="button" aria-expanded="false" data-more>
+      <span data-more-label>Гортайте далі</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+    </button>
+  </div>
+</section>
+
+<div class="ornament" aria-hidden="true"><i></i><svg viewBox="0 0 24 32" fill="none"><path d="M4 31V12.5a8 8 0 0 1 16 0V31" stroke="currentColor" stroke-width="1.3"/><path d="M12 10.2c1.7 1.9 2.9 3.7 2.9 5.6a2.9 2.9 0 0 1-5.8 0c0-1.9 1.2-3.7 2.9-5.6Z" fill="var(--accent)"/><rect x="11.15" y="19.6" width="1.7" height="11.4" fill="currentColor"/><path d="M8.2 31h7.6" stroke="currentColor" stroke-width="1.3"/></svg><i></i></div>
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head sec-head--faq"><div><p class="kicker">Питання</p><h2 class="faq__title">Що зазвичай питають родини</h2></div></div>
+    <div class="faq">
+      <details><summary>Скільки часу займає створення сайту?</summary><p>Після того як ви надіслали анкету й фото, сторінку «Пам’ять» ми готуємо за кілька днів, а більші варіанти — від одного до трьох тижнів. Точний строк назвемо одразу після розмови.</p></details>
+      <details><summary>Чи можна змінити текст чи додати фото пізніше?</summary><p>Так. У варіантах «Пам’ять» та «Історія» зміни вносимо ми на ваше прохання. У варіантах «Спадщина» й «Під ключ» у вас є власна адмінка, де можна редагувати все самостійно.</p></details>
+      <details><summary>Як довго працюватиме сайт?</summary><p>Ми створюємо сторінки, щоб вони працювали десятиліттями. Умови зберігання та підтримки фіксуємо в договорі.</p></details>
+      <details><summary>Хто бачить спогади, які залишають люди?</summary><p>Жоден спогад не з’являється на сайті автоматично. Спершу його перевіряє родина або ми, і лише потім він публікується.</p></details>
+      <details><summary>Як встановити QR-код на пам’ятник?</summary><p>Ми надаємо QR-код у форматі для гравіювання чи друку. У варіанті «Під ключ» виготовимо металеву пластину, яку легко закріпити на камені чи табличці.</p></details>
+      <details><summary>Чи можна поділитися сторінкою з рідними за кордоном?</summary><p>Так, посилання відкривається з будь-якої країни й на будь-якому телефоні. У варіантах «Спадщина» й «Під ключ» є англійська версія.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <p class="kicker">Зв’язатися</p>
+    <h2 class="contact__title">Розкажіть нам про людину,<br>яку пам’ятаєте</h2>
+    <p class="lead">Напишіть або зателефонуйте в будь-який час: ми на зв’язку 24/7. Розповімо всі деталі, підберемо рішення під ваш бюджет і супроводжуватимемо від першої розмови до готового QR-коду.</p>
+    <div class="contact__cta">
+      <a class="btn btn--accent" href="https://www.instagram.com/navichno.in.ua/" target="_blank" rel="noopener">Написати в Instagram</a>
+      <a class="btn icon-btn" href="tel:+380739828338" aria-label="Зателефонувати" title="Зателефонувати"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></a>
+    </div>
+    <a class="tg-card" href="#" target="_blank" rel="noopener">
+      <span class="tg-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M21 4 3 11l6 2.2L18 7l-6.6 7.4L11 20l3.2-3.6L18 19z"/></svg></span>
+      <span class="tg-card__text">
+        <b>Telegram-бот navichno</b>
+        <small>Дасть відповіді на питання, допоможе обрати формат і розрахує вартість.</small>
+      </span>
+      <span class="tg-card__go" aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+</main>
+
+<footer class="f2">
+  <div class="wrap">
+    <div class="f2__cols">
+      <nav aria-label="Розділи сайту">
+        <p class="f2__t">Розділи</p>
+        <div class="f2__list"><a href="#how">Як це працює</a><a href="#plans">Формати</a><a href="#tone">Оформлення</a><a href="#inside">Що всередині</a></div>
+      </nav>
+      <div>
+        <p class="f2__t">Формати</p>
+        <div class="f2__list"><a href="#plans">Пам’ять</a><a href="#plans">Історія</a><a href="#plans">Спадщина</a><a href="#plans">Під ключ</a></div>
+      </div>
+      <div>
+        <p class="f2__t">Контакти 24/7</p>
+        <a class="f2__num" href="tel:+380739828338">+380 73 982 83 38</a>
+        <div class="f2__stack">
+          <a class="btn btn--accent f2__btn" href="tel:+380739828338"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>Зателефонувати</a>
+          <a class="btn f2__btn f2__btn--tg" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M21 4 3 11l6 2.2L18 7l-6.6 7.4L11 20l3.2-3.6L18 19z"/></svg>Telegram-бот</a>
+        </div>
+      </div>
+      <div>
+        <p class="f2__t">Соцмережі та пошта</p>
+        <div class="socials f2__soc"><a class="icon-btn btn" href="https://www.instagram.com/navichno.in.ua/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+        <a class="icon-btn btn" href="#" aria-label="TikTok (скоро)" title="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.6"/></svg></a>
+        <a class="icon-btn btn" href="#" aria-label="Facebook (скоро)" title="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 8H17V4.5h-2.5A3.5 3.5 0 0 0 11 8v2.5H8.5V14H11v7h3.5v-7H17l.5-3.5h-3V8.5a.5.5 0 0 1 .5-.5Z"/></svg></a>
+        <a class="icon-btn btn" href="#" aria-label="Написати на пошту" title="Написати на пошту"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg></a></div>
+      </div>
+    </div>
+    <div class="f2__bar">
+      <div class="f2__left"><a class="logo f2__logo" href="#hero" aria-label="navichno — на початок"><svg viewBox="0 0 24 32" fill="none" aria-hidden="true"><path d="M4 31V12.5a8 8 0 0 1 16 0V31" stroke="currentColor" stroke-width="1.3"/><path d="M12 10.2c1.7 1.9 2.9 3.7 2.9 5.6a2.9 2.9 0 0 1-5.8 0c0-1.9 1.2-3.7 2.9-5.6Z" fill="var(--accent)"/><rect x="11.15" y="19.6" width="1.7" height="11.4" fill="currentColor"/><path d="M8.2 31h7.6" stroke="currentColor" stroke-width="1.3"/></svg>navichno<span class="logo__ua">in UA</span></a><span class="f2__copy">© navichno in UA 2026. Усі права захищено</span></div>
+      <nav class="f2__legal" aria-label="Додатково">
+        <a href="#faq">Питання</a>
+        <a href="#contact">Контакти</a>
+        <a href="#">Договір публічної оферти</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
