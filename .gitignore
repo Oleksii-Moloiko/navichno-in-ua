@@ -1,2 +1,5 @@
 .DS_Store
 css/style.backup.css
+bot/.env
+bot/data/
+__pycache__/
